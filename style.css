@@ -1,7 +1,15 @@
 *{
   margin: 0px;
   padding: 0px;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+}
+strong{
+ color: #EE24FF;
 }
 .container{
   display: flex;
@@ -9,18 +17,12 @@
   margin: auto;
   max-width: 626px;
   height: 486px;
-  border: 1px solid black;
 }
-img{
+.container img{
   margin: 0px 138px;
-  max-width: 100%;
-}
-strong{
- color: #EE24FF;
 }
 .tittle{
   margin: 32px 65px 16px 65px;
-  border: 1px solid black;
 }
 .tittle h1{
   font-family: Dosis;
@@ -31,7 +33,6 @@ strong{
 }
 .description{
   margin: 0px 36px 0px 50px;
-  border: 1px solid black;
 }
 .description p{
   color: #828282;
@@ -43,4 +44,54 @@ strong{
 }
 .description strong{
   color: #3F3D56;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0px auto;
+  max-width: 1024px;
+  height: 245px;
+}
+.nav{
+  padding-bottom: 60px;
+}
+.nav ul{
+  display: flex;
+  gap: 42px;
+}
+.nav a{
+  font-family: Open Sans;
+  font-size: 15px;
+  color: #3F3D56;
+  font-weight: 700;
+  line-height: 147.682%;
+}
+@media(max-width: 620px){
+  .description{
+    margin: 0px;
+    padding: 0px 15px;
+  }
+  .tittle{
+    margin: 32px 25px 16px 25px;
+  }
+  .tittle h1{
+    font-size: 30px;
+  }
+}
+@media(max-width: 560px){
+  .container img{
+    margin: 0px 80px;
+  }
+}
+@media(max-width: 480px){
+  .container img{
+    margin: 0px 50px;
+  }
+}
+@media(max-width: 400px){
+  .tittle h1{
+    font-size: 25px;
+  }
 }
